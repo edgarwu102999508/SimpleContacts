@@ -1,0 +1,11 @@
+<ul>
+  <li class="contact" *ngFor="let contact of contacts let i= index">
+    <div class="card">
+      <img class="photo" src="{{contact.photo}}" alt="User-photo">
+      <div class="contact-details">
+        <h4 class="name">{{contact.name}}</h4>
+        <p class="address">{{contact.address}}</p>
+      </div>
+    </div>
+  </li>
+</ul>

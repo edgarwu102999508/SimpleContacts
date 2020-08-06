@@ -1,0 +1,32 @@
+.contact {
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0px;
+  box-shadow: 0px 2px 5px rgb(180, 180, 180);
+}
+
+.card:hover {
+  transition: ease-out 200ms;
+  transform: scale(1.01);
+}
+
+.photo {
+  border-radius: 50%;
+  height: 96px;
+  width: 96px;
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 2em;
+}
+
+.address {
+  font-size: 1.2em;
+  color: rgb(126, 126, 126);
+}
