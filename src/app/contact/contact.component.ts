@@ -10,6 +10,7 @@ export class ContactComponent implements OnInit {
   name: string;
   address: string;
   photo: string;
+  count: number;
 
   constructor() {}
 
@@ -46,7 +47,10 @@ export class ContactComponent implements OnInit {
 
   delContact(i) {
     this.contacts.splice(i, 1);
+    this.count--;
   }
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.count = this.contacts.length;
+  }
 }
