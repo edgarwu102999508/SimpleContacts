@@ -10,6 +10,7 @@ export class ContactComponent implements OnInit {
   name: string;
   address: string;
   photo: string;
+
   constructor() {}
 
   contacts = [
@@ -42,6 +43,10 @@ export class ContactComponent implements OnInit {
       address: "23 Queen Street, Melbourne",
     },
   ];
+
+  delContact(i) {
+    this.contacts.splice(i, 1);
+  }
 
   ngOnInit(): void {}
 }
