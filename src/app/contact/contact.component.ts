@@ -6,6 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./contact.component.css"],
 })
 export class ContactComponent implements OnInit {
+  title: string;
   name: string;
   address: string;
   photo: string;
@@ -13,28 +14,32 @@ export class ContactComponent implements OnInit {
 
   contacts = [
     {
+      title: "Mr",
       id: 1,
       photo: "https://picsum.photos/200/300",
-      name: "Mr.Lachlan van der Velden",
+      name: "Lachlan van der Velden",
       address: "20 Queen Street, Melbourne",
     },
     {
+      title: "Mrs",
       id: 2,
       photo: "https://picsum.photos/200/301",
-      name: "Mrs.Grace Smith",
-      address: "20 Queen Street, Melbourne",
+      name: "Grace Smith",
+      address: "21 Queen Street, Melbourne",
     },
     {
+      title: "Mx",
       id: 3,
       photo: "https://picsum.photos/200/302",
-      name: "Mx.Frank George",
-      address: "20 Queen Street, Melbourne",
+      name: "Frank George",
+      address: "22 Queen Street, Melbourne",
     },
     {
+      title: "Mr",
       id: 4,
       photo: "https://picsum.photos/200/303",
-      name: "Mr.Bob Grange",
-      address: "20 Queen Street, Melbourne",
+      name: "Bob Grange",
+      address: "23 Queen Street, Melbourne",
     },
   ];
 

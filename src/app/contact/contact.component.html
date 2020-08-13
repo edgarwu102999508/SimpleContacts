@@ -3,7 +3,14 @@
     <div class="card">
       <img class="photo" src="{{contact.photo}}" alt="User-photo">
       <div class="contact-details">
-        <h4 class="name">{{contact.name}}</h4>
+        <h4 class="name">{{contact.title}}.{{contact.name}}
+          <span *ngIf="contact.title == 'Mr'" class="title-mr"><i class="far
+              fa-smile-wink"></i></span>
+          <span *ngIf="contact.title == 'Mrs'" class="title-mrs"><i class="far
+              fa-smile-beam"></i></span>
+          <span *ngIf="contact.title == 'Mx'" class="title-mx"><i class="far
+              fa-grimace"></i></span>
+        </h4>
         <p class="address">{{contact.address}}</p>
       </div>
     </div>
