@@ -1,0 +1,11 @@
+<h3 class="totalContact">
+  Total Contact: <span class="count">{{ count }}</span>
+</h3>
+<ul>
+  <li
+    class="contact"
+    *ngFor="let contact of contactService.contacts; let i = index"
+  >
+    <contact [contact]="contact"></contact>
+  </li>
+</ul>

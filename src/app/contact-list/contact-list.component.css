@@ -1,0 +1,13 @@
+.totalContact {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.count {
+  padding-left: 10px;
+  color: rgb(147, 216, 187);
+}
+
+.contact {
+  list-style: none;
+}
