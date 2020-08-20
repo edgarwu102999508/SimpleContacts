@@ -1,0 +1,53 @@
+.add-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 20% 3rem 20%;
+  font-size: 1.1rem;
+  background-color: rgb(241, 241, 241);
+}
+
+.contact-title, .contact-name, .contact-address, label {
+  display: flex;
+  flex-direction: column;
+  margin: 6px 0;
+}
+
+label {
+  font-weight: 600;
+}
+
+input[type=name], input[type=address], select {
+  font-size: 1rem;
+  padding: 8px 20px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+select:focus {
+  border: 1px solid rgb(147, 216, 187);
+}
+
+input[type=name]:focus, input[type=address]:focus {
+  border: 1px solid rgb(147, 216, 187);
+}
+
+.add-btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 8px;
+  margin-top: 30px;
+  background-color: rgb(147, 216, 187);
+  border: none;
+  border-radius: 6px;
+  transition: all .2s;
+}
+
+.add-btn:hover {
+  filter: brightness(1.05);
+}
+
+.add-btn:focus {
+  outline: none;
+}

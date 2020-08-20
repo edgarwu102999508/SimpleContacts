@@ -1,0 +1,35 @@
+<form action="submit" class="add-contact" (ngSubmit)="createContact()">
+  <div class="contact-title">
+    <label for="title">Title: </label>
+    <select ngModel name="title" id="title" [(ngModel)]="contactTitle">
+      <option value="Mr">Mr</option>
+      <option value="Ms">Ms</option>
+      <option value="Mrs">Mrs</option>
+    </select>
+  </div>
+  <div class="contact-name">
+    <label for="name">Name: </label>
+    <input
+      type="name"
+      class="name"
+      placeholder="Your name.."
+      ngModel
+      name="name"
+      [(ngModel)]="contactName"
+    />
+  </div>
+  <div class="contact-address">
+    <label for="address">Address: </label>
+    <input
+      type="address"
+      class="address"
+      placeholder="Your address.."
+      ngModel
+      name="address"
+      [(ngModel)]="contactAddress"
+    />
+  </div>
+  <button type="button" class="add-btn" (click)="createContact()">
+    Add New Contact
+  </button>
+</form>

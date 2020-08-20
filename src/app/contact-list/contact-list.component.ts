@@ -8,15 +8,19 @@ import { ContactsService } from "../services/contacts.service";
 })
 export class ContactListComponent implements OnInit {
   count: number;
+
   constructor(public contactService: ContactsService) {}
 
   delContact(i) {
-    this.contactService.contacts.splice(
-      this.contactService.contacts.indexOf(i),
-      1
-    );
-    this.count--;
-    console.log("test");
+    if (confirm("Do you really want to Delete?") == true) {
+      this.contactService.contacts.splice(
+        this.contactService.contacts.indexOf(i),
+        1
+      );
+      this.count--;
+    } else {
+      return;
+    }
   }
 
   ngOnInit() {
